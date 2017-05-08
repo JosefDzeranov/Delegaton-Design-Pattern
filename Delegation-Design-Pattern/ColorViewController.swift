@@ -57,7 +57,7 @@ class ColorViewController: UIViewController {
         print("Func SelectColor in ColorViewController")
         
         if let delegate = self.delegate {
-            print("Call func delegate")
+            print("Call func delegate with parameters \(sender.titleLabel?.text! ?? "None")")
             delegate.setColorValue(colorValue: (sender.titleLabel?.text!)!)
             
             print("Dissmiss in ColorViewController")

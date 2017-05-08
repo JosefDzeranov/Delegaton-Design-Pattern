@@ -72,14 +72,20 @@
                                 <rect key="frame" x="166" y="293" width="42" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Green"/>
+                                <connections>
+                                    <action selector="SelectColor:" destination="Lu4-4M-e8J" eventType="touchUpInside" id="s3E-tn-svS"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1sV-Xq-UVJ">
                                 <rect key="frame" x="281" y="293" width="31" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Blue"/>
+                                <connections>
+                                    <action selector="SelectColor:" destination="Lu4-4M-e8J" eventType="touchUpInside" id="ZVd-yO-RGu"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="None" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r31-9L-fBP">
-                                <rect key="frame" x="166" y="214" width="41" height="21"/>
+                                <rect key="frame" x="166" y="206" width="68" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -94,7 +100,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QgI-I1-BAc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="970" y="139"/>
+            <point key="canvasLocation" x="968.79999999999995" y="138.98050974512745"/>
         </scene>
     </scenes>
 </document>
