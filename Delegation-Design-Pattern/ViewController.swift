@@ -38,6 +38,17 @@ class ViewController: UIViewController, ColorViewDelegate {
     func setColorValue(colorValue: String) {
         print("Work Func from Delegate setColorValue")
         ColorValue.text = colorValue
+        switch colorValue {
+        case "Red":
+            ColorUIView.backgroundColor = UIColor.red
+        case "Green":
+            ColorUIView.backgroundColor = UIColor.green
+        case "Blue":
+            ColorUIView.backgroundColor = UIColor.blue
+        default:
+            ColorUIView.backgroundColor = UIColor.gray
+        }
+        
     }
     
 }

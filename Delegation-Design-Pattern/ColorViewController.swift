@@ -60,6 +60,7 @@ class ColorViewController: UIViewController {
             print("Call func delegate with parameters \(sender.titleLabel?.text! ?? "None")")
             delegate.setColorValue(colorValue: (sender.titleLabel?.text!)!)
             
+            
             print("Dissmiss in ColorViewController")
             self.dismiss(animated: true, completion: nil)
         }
