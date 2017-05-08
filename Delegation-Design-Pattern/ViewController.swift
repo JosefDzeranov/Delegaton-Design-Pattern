@@ -21,6 +21,7 @@ class ViewController: UIViewController, ColorViewDelegate {
     // MARK Outlets
     @IBOutlet weak var ColorValue: UILabel!
 
+    @IBOutlet weak var ColorUIView: UIView!
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         print("Call prepare in ViewController")
