@@ -15,6 +15,7 @@
 		C6AE94341EC064B80006B46E /* Delegation_Design_PatternTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AE94331EC064B80006B46E /* Delegation_Design_PatternTests.swift */; };
 		C6AE943F1EC064B80006B46E /* Delegation_Design_PatternUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AE943E1EC064B80006B46E /* Delegation_Design_PatternUITests.swift */; };
 		C6AE944D1EC064ED0006B46E /* ColorViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AE944C1EC064ED0006B46E /* ColorViewDelegate.swift */; };
+		C6AE944F1EC06D820006B46E /* ColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AE944E1EC06D820006B46E /* ColorViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		C6AE943E1EC064B80006B46E /* Delegation_Design_PatternUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Delegation_Design_PatternUITests.swift; sourceTree = "<group>"; };
 		C6AE94401EC064B80006B46E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C6AE944C1EC064ED0006B46E /* ColorViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorViewDelegate.swift; sourceTree = "<group>"; };
+		C6AE944E1EC06D820006B46E /* ColorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				C6AE94271EC064B70006B46E /* LaunchScreen.storyboard */,
 				C6AE942A1EC064B70006B46E /* Info.plist */,
 				C6AE944C1EC064ED0006B46E /* ColorViewDelegate.swift */,
+				C6AE944E1EC06D820006B46E /* ColorViewController.swift */,
 			);
 			path = "Delegation-Design-Pattern";
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 			files = (
 				C6AE944D1EC064ED0006B46E /* ColorViewDelegate.swift in Sources */,
 				C6AE94211EC064B70006B46E /* ViewController.swift in Sources */,
+				C6AE944F1EC06D820006B46E /* ColorViewController.swift in Sources */,
 				C6AE941F1EC064B70006B46E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

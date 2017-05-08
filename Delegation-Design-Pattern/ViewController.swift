@@ -8,18 +8,36 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController, ColorViewDelegate {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+     print("viewDidLoad in View Controller")
+     
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    // MARK Outlets
+    @IBOutlet weak var ColorValue: UILabel!
+
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        print("Call prepare in ViewController")
+        
+        if(segue.identifier == "selectColor"){
+            let destianation = segue.destination as? ColorViewController
+            
+            destianation?.delegate = self;
+            destianation?.colorTextLabel = ColorValue.text!;
+            
+        }
     }
-
-
+    
+    func setColorValue(colorValue: String) {
+        print("Work Func from Delegate setColorValue")
+        ColorValue.text = colorValue
+    }
+    
 }
 

@@ -26,6 +26,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <state key="normal" title="Choose Color"/>
+                                <connections>
+                                    <segue destination="Lu4-4M-e8J" kind="show" identifier="selectColor" id="rSW-en-huz"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="None" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tfD-Z9-a8i">
                                 <rect key="frame" x="130" y="124" width="115" height="53"/>
@@ -37,15 +40,18 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="ColorValue" destination="tfD-Z9-a8i" id="eee-Zi-i7u"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
         </scene>
-        <!--View Controller-->
+        <!--Color View Controller-->
         <scene sceneID="9nx-8A-I06">
             <objects>
-                <viewController id="Lu4-4M-e8J" sceneMemberID="viewController">
+                <viewController id="Lu4-4M-e8J" customClass="ColorViewController" customModule="Delegation_Design_Pattern" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mk4-86-5B5"/>
                         <viewControllerLayoutGuide type="bottom" id="9d4-bx-QEW"/>
@@ -58,6 +64,9 @@
                                 <rect key="frame" x="63" y="293" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Red"/>
+                                <connections>
+                                    <action selector="SelectColor:" destination="Lu4-4M-e8J" eventType="touchUpInside" id="70G-1X-Xjg"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O8m-XY-Uce">
                                 <rect key="frame" x="166" y="293" width="42" height="30"/>
@@ -79,6 +88,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="SelectingColor" destination="r31-9L-fBP" id="Jc3-sh-Jzc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QgI-I1-BAc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
