@@ -31,7 +31,7 @@ class ViewController: UIViewController, ColorViewDelegate {
             
             destianation?.delegate = self;
             destianation?.colorTextLabel = ColorValue.text!;
-            
+            destianation?.test = "25"
         }
     }
     

@@ -13,6 +13,7 @@ class ColorViewController: UIViewController {
     
     var delegate: ColorViewDelegate?
     var colorTextLabel : String?
+    var test: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +26,8 @@ class ColorViewController: UIViewController {
         else{
             SelectingColor.text = "None"
         }
+        
+        print("Test value ", test!)
         // Do any additional setup after loading the view.
     }
     
