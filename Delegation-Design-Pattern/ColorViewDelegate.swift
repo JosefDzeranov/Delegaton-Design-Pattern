@@ -8,4 +8,5 @@
 
 import Foundation
 protocol ColorViewDelegate {
+    func setColorValue(colorValue : String)
 }
